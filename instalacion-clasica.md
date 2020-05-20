@@ -2,7 +2,6 @@
 
 ### ⚠️ NOTAS IMPORTANTES
 
-
 > El siguiente conjunto de sistemas requiere de:
 > - Mongo3.6
 > - Keycloak

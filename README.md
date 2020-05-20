@@ -8,6 +8,8 @@ La segunda forma es utilizando Docker y `docker-compose` que se explica a contin
 
 ## Instalacion Docker
 
+> ### ⚠️ NOTAS IMPORTANTES
+> 
 > El siguiente conjunto de sistemas requiere de:
 > - Keycloak
 > 
