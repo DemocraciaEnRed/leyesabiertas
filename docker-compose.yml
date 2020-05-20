@@ -1,0 +1,64 @@
+
+version: '3'
+
+services:
+  core:
+    image: democraciaenred/leyesabiertas-core:1.7.1
+    environment:
+      - PORT=3000
+      - SESSION_SECRET=PleaseCreateASecretHERE
+      - MONGO_URL=mongodb://mongo/leyesabiertas
+      - AUTH_SERVER_URL=############TODO
+      - AUTH_REALM=#################TODO
+      - AUTH_CLIENT=################TODO
+      - NOTIFIER_URL=http://notifier:3000/api
+    ports:
+      - "4000:3000"
+    depends_on:
+      - mongo
+    tty: true
+
+  web:
+    image: democraciaenred/leyesabiertas-web:1.7.2
+    environment:
+      - API_URL=http://localhost:4000
+      - AUTH_SERVER_URL=############TODO
+      - REALM=######################TODO
+      - RESOURCE=###################TODO
+      - SSL_REQUIRED=external
+      - PUBLIC_CLIENT=true
+      - CONFIDENTIAL_PORT=0
+    ports:
+      - "3000:3000"
+    depends_on:
+      - core
+    tty: true
+
+  notifier:
+    image: democraciaenred/leyesabiertas-notifier:1.7.3
+    environment:
+      - PORT=3000
+      - MONGO_URL=mongodb://mongo:27017
+      - DB_COLLECTION=leyesabiertas
+      - ORGANIZATION_EMAIL=##############TODO
+      - ORGANIZATION_NAME=###############TODO
+      - ORGANIZATION_API_URL=http://localhost:4000
+      - NODEMAILER_HOST=##############TODO
+      - NODEMAILER_PASS=##############TODO
+      - NODEMAILER_USER=##############TODO
+      - NODEMAILER_PORT=##############TODO
+      - NODEMAILER_SECURE=true
+      - NODE_ENV=development
+      - BULK_EMAIL_CHUNK_SIZE=100
+    ports:
+      - "5000:3000"
+    depends_on:
+      - core
+    tty: true
+
+  mongo:
+    image: mongo:3.6
+    ports:
+      - 32000:27017
+    volumes:
+      - ./mongo_db:/data/db
