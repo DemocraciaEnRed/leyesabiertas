@@ -1,6 +1,6 @@
+![Header](/header-doc.png)
+
 # Leyes Abiertas 
-
-
 
 Hay dos formas de instalar leyes abiertas: Una es de forma clasica, descargando, haciendo setup y corriendo cada uno de los 3 repositorios en una terminal x/ repositorio. El manual lo pueden encontrar haciendo [click aqui](/instalacion-clasica.md)
 

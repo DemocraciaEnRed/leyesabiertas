@@ -1,4 +1,7 @@
-# Instalacion (Clasica)
+![Header](/header-doc.png)
+
+
+# Leyes Abiertas  - Instalación (Clasica)
 
 ### ⚠️ NOTAS IMPORTANTES
 
