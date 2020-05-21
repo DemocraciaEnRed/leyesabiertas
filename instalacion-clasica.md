@@ -7,7 +7,7 @@
 
 > El siguiente conjunto de sistemas requiere de:
 > - Mongo3.6
-> - Keycloak
+> - Keycloak 4.4.x o 6.0.x
 > 
 > Sobre Mongo3.6, es necesario que instales mongo 3.6 en tu computadora, con una base de datos llamada "leyesabiertas". No hace falta crear alguna collection, eso lo hace la app en inicio.
 > 
