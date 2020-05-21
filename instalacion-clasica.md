@@ -25,34 +25,34 @@ dev/:$ git clone https://github.com/DemocraciaEnRed/leyesabiertas-core
 dev/:$ git clone https://github.com/DemocraciaEnRed/leyesabiertas-notifier
 ```
 
-Una vez hecho, hay que hacer un "Setup" de cada una de los repositorios que acabamos de clonar.
+  Una vez hecho, hay que hacer un "Setup" de cada una de los repositorios que acabamos de clonar.
 
-### Setup leyesabiertas-web
+  ### Setup leyesabiertas-web
 
-Ir a la carpeta del repo y instalar las dependencias.
+  Ir a la carpeta del repo y instalar las dependencias.
 
-```
-dev/:$ cd leyesabiertas-web
-dev/leyesabiertas-web:$ npm install
-```
+  ```
+  dev/:$ cd leyesabiertas-web
+  dev/leyesabiertas-web:$ npm install
+  ```
 
-Ahora tenemos que crear un archivo `.env` que son nuestras variables de entorno
+  Ahora tenemos que crear un archivo `.env` que son nuestras variables de entorno
 
-```env
-API_URL=http://localhost:4000
-AUTH_SERVER_URL=############TODO
-REALM=######################TODO
-RESOURCE=###################TODO
-SSL_REQUIRED=external
-PUBLIC_CLIENT=true
-CONFIDENTIAL_PORT=0
-```
+  ```env
+  API_URL=http://localhost:4000
+  AUTH_SERVER_URL=############TODO
+  REALM=######################TODO
+  RESOURCE=###################TODO
+  SSL_REQUIRED=external
+  PUBLIC_CLIENT=true
+  CONFIDENTIAL_PORT=0
+  ```
 
-Comando para ejecutar:
+  Comando para ejecutar:
 
-```
-dev/leyesabiertas-web:$ npm run dev
-```
+  ```
+  dev/leyesabiertas-web:$ npm run dev
+  ```
 
 ### Setup leyesabiertas-core
 
@@ -88,7 +88,7 @@ Ir a la carpeta del repo y instalar las dependencias.
 
 ```
 dev/:$ cd leyesabiertas-notifier
-dev/leyesabiertas-web:$ npm install
+dev/leyesabiertas-notifier:$ npm install
 ```
 
 Ahora tenemos que crear un archivo `.env` que son nuestras variables de entorno
