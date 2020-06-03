@@ -1,10 +1,10 @@
 ![Header](/header-doc.png)
 
 
-# Leyes Abiertas  - Instalación (Clasica)
+# Leyes Abiertas - Instalación (Clasica)
 
-### ⚠️ NOTAS IMPORTANTES
-
+> ### ⚠️ NOTAS IMPORTANTES
+>
 > El siguiente conjunto de sistemas requiere de:
 > - Mongo3.6
 > - Keycloak 4.4.x o 6.0.x
